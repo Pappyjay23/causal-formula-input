@@ -1,54 +1,71 @@
-# React + TypeScript + Vite
+<div align="center">
+	<h1> Causal Formula Input </h1>
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Snapshot 📸
 
-Currently, two official plugins are available:
+![Causal Formula Input](https://github.com/user-attachments/assets/7cdca873-4f35-46b0-a57e-d2fcfd1e721a)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview 📝
 
-## Expanding the ESLint configuration
+Causal Formula Input is a React component that emulates the formula input functionality seen in Causal, a financial modeling tool. This component allows users to input formulas with autocomplete suggestions, tag-based inputs, and real-time calculation.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features ✨
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Formula input with autocomplete suggestions
+- Tag-based input system
+- Real-time formula calculation
+- Responsive design
+- Support for mathematical operations
+
+
+## Tech Stack 🛠️
+
+- [React.js](https://reactjs.org/) - UI Library
+- [TypeScript](https://www.typescriptlang.org/) - Programming Language
+- [Tailwind CSS](https://tailwindcss.com/) - Styling and UI
+- [React Query](https://react-query.tanstack.com/) - Data Fetching and State Management
+- [Zustand](https://github.com/pmndrs/zustand) - State Management
+- [Vercel](https://vercel.com/) - Hosting and Deployment
+
+## How to run locally 💻
+
+Follow these steps to run Causal Formula Input on your local machine.
+
+### Clone this repository
+
+```bash
+git clone https://github.com/Pappyjay23/causal-formula-input.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Navigate to the directory
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+cd causal-formula-input
 ```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run
+
+Run the development server to view the app.
+
+```bash
+npm run dev
+```
+
+Now, you can navigate to http://localhost:5173/ to view the app.
+
+### Build
+
+```bash
+npm run build
+```
+
+## Credits ✍
+
+Implementation by [@Pappyjay23](https://github.com/Pappyjay23)
