@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+* {
+	font-family: "Roboto Flex", sans-serif;
+	box-sizing: border-box;
+}
